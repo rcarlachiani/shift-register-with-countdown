@@ -66,11 +66,6 @@ function Main({ date, url }) {
       style={{ backgroundImage: "url(/images/fondo.png)" }}
     >
       <div id="header" className="flex items-center justify-center flex-row ">
-        <img
-          className="absolute h-16 lg:h-24 top-4 left-4 max-w-[188px] md:max-w-[188px] xl:max-w-[188px]"
-          src="/images/logo.png"
-          alt="logo"
-        />
         <div className="pt-24 md:pt-16 xl:pt-16">
           <h1 className="font-Montserrat text-center leading-none text-white font-bold text-[32px] md:text-[52px] xl:text-[52px] xxl:text-[52px]">
             SAVE THE DATE

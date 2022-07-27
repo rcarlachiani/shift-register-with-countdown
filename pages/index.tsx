@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                 </form>
             </div>
         </main>
-        <div className="flex items-center bg-black">
+        {/* <div className="flex items-center bg-black">
             <div className="flex-1 mx-auto px-8 py-12">
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-6 md:gap-4">
                 <div className="md:col-span-3 bg-purple-500 rounded-lg shadow-xl h-auto text-white font-Montserrat text-xs">
@@ -188,7 +188,7 @@ const Home: NextPage = () => {
                 </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         <Footer />
         </>
         

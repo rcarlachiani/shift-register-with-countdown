@@ -12,15 +12,6 @@ function Footer() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </div>
-          <div className="md:col-span-2 rounded-lg shadow-xl flex justify-end">
-            <a href="#">
-              <img
-                className="max-w-[188px] md:max-w-[188px] xl:max-w-[188px]"
-                src="/images/logo.png"
-                alt="logo"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </div>
