@@ -11,8 +11,6 @@ function GeneroToken() {
 
   const [show, setShow] = useState(false);
 
-  // imprimirCosas(cookie);
-
   useEffect(() => {
     if (Object.keys(cookie).length <= 0) {
       setShow(true);
@@ -32,7 +30,6 @@ function GeneroToken() {
         {process.browser && (
           <Popup
             open={show}
-            // trigger={<button className="button"> Popup </button>}
             modal
           >
             {(close) => (
@@ -40,18 +37,6 @@ function GeneroToken() {
                 <div className="content">
                   Esta página usa cookies para mejorar la experiencia de
                   usuario.
-                  {/* <h1>Formulario</h1>
-                        <form className="row" onSubmit='#'>
-                            <div className="col-md-3">
-                                <input type="text" placeholder="Nombre" className="form-control" onChange={(e)=> setName(e.target.value)} name="nombre"></input>
-                            </div>
-                            <div className="col-md-3">
-                                <input type="text" placeholder="ID Consultor/a" className="form-control" onChange={(e)=> setIdConsultor(e.target.value)} name="apellido"></input>
-                            </div>
-                            <div className="col-md-3">
-                                <input type="email" placeholder="E-mail" className="form-control" onChange={(e)=> setEmail(e.target.value)} name="email"></input>
-                            </div>
-                        </form> */}
                 </div>
                 <div className="actions">
                   <button

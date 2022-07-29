@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "simulacro-genosha",
+  "private_key_id": "8160dae8e7d7df503d666b214dc7f25bcd2a0415",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCiHF/0vG4etj28\nEW+4RTy6Li3hoKreYMzGAhsh8hZn+dPQWLW9MuVXx0pRiMpYI781+t3JVrt3Mf3z\nDx4PC7kb75zmqUQMLqasbtaB8x5jzYwKm4FYKp1tarVzKiZtgVuk7Yw7BzvsDMn+\nZeaV2ZludsnAJLgv4GGOhrPzc/1v+hKYeyGLiOKQi+LlW7Rcs4Ub0IYXDtxSdJSA\ntXa+OQjGEbPPw/Lg2oST3jFotLqOH0ktP0dWJOn2t/CwV7tCwsZhM/1xAQHyfU1r\nBg7S6XM4yiPa4A58gd8VYdy1YzffV90zk1zFzJPyjs5kxseUAzUkNrrDjsYeCRrY\n1zve9/DLAgMBAAECggEAQCmA5SnLYAZ7artv/3wP7BSo/juMRZYEln5w5L+flKmx\n5y2lSOwjD9oGFT1R8Q68+I2BSNY2Ppgfzhr2p7fZHTB6ZmUqVLQGLgt0hVyHc7MA\nMZaY3B+JzavFg350VTU045NNxHM5iVUKgdEtMbQ9YRZNBerCp9hkZHf2M25+Kdos\nD2+sBhwTExJSugKOs60w/pTERQVPbuTeyMDLcAKr9M9X+wbzSZyxGQ1kALuD6DiO\nzgwGKvO6gmME4wfwThEaevrJYwy3f7ra2FQ73+HQU04pWm6jGagUxrac+qcPxEHj\nYNNA/zztdo+qLKvNww5kd/4is2SGv74Zz5t028QhsQKBgQDXK1RGTLyAtUkx8u+m\n6aHXFgxTmHarY7/fr38p9Ps8yV7uia5ZMMDntougI8iOMDKvRKKIgq17C99pW9BI\nkpxtOptJawBJ0WG5rGr24+XfkNrxHHlzMGzUMTcZ90orVrVDPXmXtdZ90JEZHnoH\ndS43bwL8YmONO1x+5HYKZwDzMwKBgQDA34ej4/hbqr+6Ow6xFI/F97wOeT/dwHwj\nfEp2CCg7kxqHWZ3Ntp0u8VUpnFR0uzRPtIicIrpcxD3iPGP26sJ0oEhN4LIf4Yax\nY+BiRytyXZqSf/KqpqQkrARGAHLlH1fJKMDrC2H2ANvHr/sHP/tCUMGWoXIF8oGQ\nTUUXOVMMCQKBgGGQEAJgQQjLKokvcmLohK2WHbi55PUJobK3TJ2lq1WAqT7XxupC\nJPXr25udHg7648B9CoWDW03zsDWBoAuIDs2oSUkc72CJRBqAh2+zHkQk1mGFW7xT\nNMVyG132tva3tjDq6vtTRBKAQ4p0OziudWpFN8Fgi2s6g1I2HR/SXKfpAoGACG28\nT702rUrY9hp+md58KfqZjUhfMiGnSyWzW1Uf7PqQvjl8W/EPDW4eeqMKTc+giZsq\nHSinXEZ3LdvVwoSf2tjmUADxx9LjP/1NYP4bN/Q/PQe6YxrFMZUS2rxKSRkFjRTq\n2Vq1/TosYJ2gKsDxCgTdcOe9Q+VFJDk8O7eVmYECgYAbOJP7haXaAyDpbOWpHMbY\njqrHQfKisgl6IK/zOQeFDofsQXPNeTuIu1sYMt4HwXwd45sSf6mEpF0Ty/fJ3UXi\nXfR42XzBUK+AwusBdWUxMJUdcvJFf+sPe/bS6g1O9sM5Irkd1J2xliP/0LPz5qwp\nSlBuQ7ErAiBHzmdrmrut2g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheet@simulacro-genosha.iam.gserviceaccount.com",
+  "client_id": "113747656937034075891",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40simulacro-genosha.iam.gserviceaccount.com"
+}

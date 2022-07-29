@@ -2,10 +2,15 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { google } from "googleapis";
 
 type SheetForm = {
+  date: string;
+  schedule: string;
+  backline: string;
+  artistName: string;
   name: string;
+  lastName: string;
   email: string;
   phone: string;
-  message: string;
+  terms: string;
 };
 
 export default async function handler(
@@ -38,19 +43,19 @@ export default async function handler(
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: "A1:D1",
+      range: "A1:I1",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[body.name, body.email, body.phone, body.message]],
+        values: [[body.date, body.schedule, body.backline, body.artistName, body.name, body.lastName, body.email, body.phone, body.terms]],
       },
     });
 
     return res.status(201).json({
       data: response.data,
     });
+
   } catch (e) {
-    console.log("manuu error", e);
-    return res.status(500).json({ error: e });
-    // return res.status(e.code).send({ message: e.message });
+    console.error(e);
+    return res.status(500).send({message: 'Algo salió mal'});
   }
 }

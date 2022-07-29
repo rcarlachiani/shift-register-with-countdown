@@ -8,12 +8,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.1",
+    "dotenv": "^16.0.1",
     "google-spreadsheet": "^3.2.0",
     "googleapis": "^94.0.0",
     "next": "^12.2.3",
+    "nodemailer": "^6.7.7",
     "react": "17.0.2",
     "react-cookie": "^4.1.1",
     "react-countdown": "^2.3.2",
+    "react-day-picker": "^8.0.7",
     "react-dom": "17.0.2",
     "reactjs-popup": "^2.0.5"
   },
