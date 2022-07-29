@@ -94,9 +94,7 @@ function Count({ date, selectedDate }) {
             </button>
         </div>
       </Link>
-        
-      <GeneroToken />
-
+      
     </section>
   );
 }
