@@ -50,4 +50,3 @@ export async function submitToGoogleSheets2(values: SheetForm) {
 
     await doc.loadInfo(); // loads document properties and worksheets
 }
-
