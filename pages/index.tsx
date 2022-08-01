@@ -1,12 +1,12 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import React from "react";
-import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import {FormEvent, useState} from "react";
 import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
 import { differenceInCalendarDays } from 'date-fns';
+import type { NextPage } from 'next'
 import es from 'date-fns/locale/es';
 import 'react-day-picker/dist/style.css';
 
@@ -21,20 +21,20 @@ const Home: NextPage = () => {
     const [selected, setSelected] = useState<Date>();
     const [schedule, setSchedule] = useState('');
     const [checked, setChecked] = useState(false);
-    const dateCountdown = parseInt(selected ? format(selected, 'T') : '')
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         if (selected) {
             const date = format(selected, 'PPPP', {locale: es});
-            const countDown = (new Date(dateCountdown)).toString()
+            const formatedDateCountdown = (format(selected, 'PP') + ' ' + schedule + ' GMT-3')
+            const formatedHour = schedule.replace(':00', '') + 'hs'
             const terms = checked === true ? 'Sí' : 'No'
-
+    
             let form = {
                 date,
-                countDown,
-                schedule,
+                formatedDateCountdown,
+                formatedHour,
                 backline,
                 artistName,
                 name,
@@ -85,7 +85,8 @@ const Home: NextPage = () => {
             router.push({pathname: "success",
                 query: {
                     selectedDate: selected ? format(selected, 'PPPP', {locale: es}) : '',
-                    date: (new Date(dateCountdown)).toString()
+                    selectedHour: schedule ? formatedHour : '',
+                    date: formatedDateCountdown
                 }
             })
 
@@ -161,13 +162,13 @@ const Home: NextPage = () => {
 
                         <select value={schedule} onChange={e => setSchedule(e.target.value)} className="border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" required>
                             <option value="" disabled hidden>Seleccione un horario</option>
-                            <option value="8:00hs">08:00hs</option>
-                            <option value="9:00hs">09:00hs</option>
-                            <option value="10:00hs">10:00hs</option>
-                            <option value="11:00hs">11:00hs</option>
-                            <option value="18:00hs">18:00hs</option>
-                            <option value="19:00hs">19:00hs</option>
-                            <option value="20:00hs">20:00hs</option>
+                            <option value="8:00:00">08:00hs</option>
+                            <option value="9:00:00">09:00hs</option>
+                            <option value="10:00:00">10:00hs</option>
+                            <option value="11:00:00">11:00hs</option>
+                            <option value="18:00:00">18:00hs</option>
+                            <option value="19:00:00">19:00hs</option>
+                            <option value="20:00:00">20:00hs</option>
                         </select>
 
                         <div className="flex items-center mt-10 mb-5">
