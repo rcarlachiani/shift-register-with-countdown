@@ -56,6 +56,7 @@ function Count({ date, selectedDate, selectedHour }) {
   const selectedDay = selectedDate
   const selectedSchedule = selectedHour
 
+
   return (
     <section
       className="flex items-center flex-col h-full min-h-screen bg-center bg-cover h-full min-h-screen w-screen bg-white/50 "
