@@ -18,9 +18,9 @@ export default function (req: any, res: any) {
                 <h1>Turno confirmado para el día ${req.body.date} a las ${req.body.formatedHour}</h1>
                 
 
-                <h2><a href="https://simulacro-campania-genosha.vercel.app/success?selectedDate=${req.body.date}&date=${req.body.formatedDateCountdown}">VISITÁ LA CUENTA REGRESIVA</a></h2>
+                <h2><a href="https://simulacro-campania-genosha.vercel.app/success?date=${req.body.formatedDateCountdown}&selectedDate=${req.body.date}">VISITÁ LA CUENTA REGRESIVA</a></h2>
 
-
+                
                     <p>Recordamos la información brindada, ante cualquier modificación comuníquese telefónicamente al +549 342 5373670</p>
 
 

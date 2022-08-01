@@ -84,9 +84,9 @@ const Home: NextPage = () => {
 
             router.push({pathname: "success",
                 query: {
+                    date: formatedDateCountdown,
                     selectedDate: selected ? format(selected, 'PPPP', {locale: es}) : '',
-                    selectedHour: schedule ? formatedHour : '',
-                    date: formatedDateCountdown
+                    selectedHour: formatedHour
                 }
             })
 
