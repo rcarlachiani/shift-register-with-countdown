@@ -3,7 +3,7 @@ import { google } from "googleapis";
 
 type SheetForm = {
   date: string;
-  schedule: string;
+  formatedHour: string;
   backline: string;
   artistName: string;
   name: string;
@@ -46,7 +46,7 @@ export default async function handler(
       range: "A1:I1",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[body.date, body.schedule, body.backline, body.artistName, body.name, body.lastName, body.email, body.phone, body.terms]],
+        values: [[body.date, body.formatedHour, body.backline, body.artistName, body.name, body.lastName, body.email, body.phone, body.terms]],
       },
     });
 
