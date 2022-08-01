@@ -1,5 +1,3 @@
-import { format } from 'date-fns';
-
 export default function (req: any, res: any) {
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
@@ -17,10 +15,10 @@ export default function (req: any, res: any) {
         text: 'SU TURNO FUE CONFIRMADO',
         html: `
             <div>
-                <h1>Turno confirmado para el día ${req.body.date} a las ${req.body.schedule}</h1>
+                <h1>Turno confirmado para el día ${req.body.date} a las ${req.body.formatedHour}</h1>
                 
 
-                <h2><a href="https://simulacro-campania-genosha.vercel.app/success?selectedDate=${req.body.date}&date=${req.body.countDown}">VISITÁ LA CUENTA REGRESIVA</a></h2>
+                <h2><a href="https://simulacro-campania-genosha.vercel.app/success?selectedDate=${req.body.date}&date=${req.body.formatedDateCountdown}">VISITÁ LA CUENTA REGRESIVA</a></h2>
 
 
                     <p>Recordamos la información brindada, ante cualquier modificación comuníquese telefónicamente al +549 342 5373670</p>

@@ -52,8 +52,9 @@ const Circle = ({ label, value, max }) => {
   );
 };
 
-function Count({ date, selectedDate }) {
-  const selected = selectedDate
+function Count({ date, selectedDate, selectedHour }) {
+  const selectedDay = selectedDate
+  const selectedSchedule = selectedHour
 
   return (
     <section
@@ -67,7 +68,7 @@ function Count({ date, selectedDate }) {
             Su turno es el día
           </h1>
           <p className="font-normal text-center text-yellow font-bold text-[32px] md:text-[42px] xl:text-[42px] xxl:text-[42px]">
-            {selected}
+            {selectedDay} a las {selectedSchedule}
           </p>
           <br/>
         </div>
