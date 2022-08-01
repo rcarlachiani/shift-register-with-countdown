@@ -23,31 +23,17 @@ const Home: NextPage = () => {
     const [checked, setChecked] = useState(false);
     const dateCountdown = parseInt(selected ? format(selected, 'T') : '')
 
-    function isPastDate(date: Date) {
-        return differenceInCalendarDays(date, new Date()) < 0;
-    }
-
-    function clearData() {
-        setArtistName('')
-        setPhone('')
-        setName('')
-        setLastName('')
-        setEmail('')
-        setBackline('')
-        setSchedule('')
-        setSelected(undefined)
-        setChecked(false)
-    }
-
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         if (selected) {
             const date = format(selected, 'PPPP', {locale: es});
+            const countDown = (new Date(dateCountdown)).toString()
             const terms = checked === true ? 'Sí' : 'No'
 
             let form = {
                 date,
+                countDown,
                 schedule,
                 backline,
                 artistName,
@@ -65,6 +51,7 @@ const Home: NextPage = () => {
                   'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(form)
+                
               }).then((res) => {
                 console.log('Response received')
                 if (res.status === 200) {
@@ -105,6 +92,22 @@ const Home: NextPage = () => {
         } else {
             alert('Debes seleccionar una fecha de reserva')
         }
+    }
+
+    function isPastDate(date: Date) {
+        return differenceInCalendarDays(date, new Date()) < 0;
+    }
+
+    function clearData() {
+        setArtistName('')
+        setPhone('')
+        setName('')
+        setLastName('')
+        setEmail('')
+        setBackline('')
+        setSchedule('')
+        setSelected(undefined)
+        setChecked(false)
     }
 
     return (
@@ -184,6 +187,7 @@ const Home: NextPage = () => {
                         
                     </form>
                 </div>
+
             </main>
             <Footer />
         </>
