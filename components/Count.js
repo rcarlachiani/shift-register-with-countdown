@@ -1,6 +1,5 @@
 import React from "react";
 import Countdown from "react-countdown";
-import GeneroToken from "./Cookies";
 import Link from "next/link";
 
 const Renderer = ({ days, hours, minutes, seconds }) => {
