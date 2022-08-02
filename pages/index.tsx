@@ -118,24 +118,24 @@ const Home: NextPage = () => {
                 <div className="max-w-5xl">
                     <form className="flex flex-col items-center mb-10" onSubmit={handleSubmit}>
 
-                        <div className="flex p-2">
+                        <div className="flex flex-col p-0 sm:flex-row sm:p-2">
                             <label htmlFor="name" className="sr-only">Name</label>
-                            <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="mx-4 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Nombre" required/>
+                            <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="mx-4 my-2 sm:my-0 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Nombre" required/>
                             <label htmlFor="lastName" className="sr-only">Last Name</label>
-                            <input value={lastName} onChange={e => setLastName(e.target.value)} type="text" name="lastName" id="lastName" className="mx-4 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Apellido" required/>
+                            <input value={lastName} onChange={e => setLastName(e.target.value)} type="text" name="lastName" id="lastName" className="mx-4 my-2 sm:my-0 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Apellido" required/>
                         </div>
 
-                        <div className="flex p-2">               
+                        <div className="flex flex-col p-0 sm:flex-row sm:p-2">               
                             <label htmlFor="email" className="sr-only">Email</label>
-                            <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="mx-4 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Email" required/>                 
+                            <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="mx-4 my-2 sm:my-0 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Email" required/>                 
                             <label htmlFor="phone" className="sr-only">Phone</label>
-                            <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="mx-4 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Teléfono" required/>    
+                            <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="mx-4 my-2 sm:my-0 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Teléfono" required/>    
                         </div>
 
-                        <div className="flex p-2"> 
+                        <div className="flex flex-col p-0 sm:flex-row sm:p-2"> 
                             <label htmlFor="artistName" className="sr-only">Artist Name</label>
-                            <input value={artistName} onChange={e => setArtistName(e.target.value)} type="text" name="artistName" id="artistName" className="mx-4 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Nombre artista/banda" required/>
-                            <select value={backline} onChange={e => setBackline(e.target.value)} className="mx-4 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" required>
+                            <input value={artistName} onChange={e => setArtistName(e.target.value)} type="text" name="artistName" id="artistName" className="mx-4 my-2 sm:my-0 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" placeholder="Nombre artista/banda" required/>
+                            <select value={backline} onChange={e => setBackline(e.target.value)} className="mx-4 my-2 sm:my-0 border-4 border-yellow focus:border-yellow bg-whitesmoke font-Montserrat rounded-full" required>
                                 <option value="" disabled hidden>Alquiler de backline</option>
                                 <option value="Sí">Sí</option>
                                 <option value="No">No</option>
