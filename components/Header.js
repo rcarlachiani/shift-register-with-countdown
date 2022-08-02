@@ -2,8 +2,8 @@ function Header() {
     return (
         <div className='flex flex-col items-center mt-3 p-5'>    
             <div className='flex items-center mb-4'>
-                <img src="/images/snLogo.png" alt="studio-logo" className='w-12 drop-shadow-lg'/>
-                <h1 className="font-Montserrat text-center leading-none text-white font-bold text-[25px] md:text-[35px] xl:text-[35px] xxl:text-[35px] p-4 drop-shadow-lg">
+                <img src="/images/snLogo.png" alt="studio-logo" className='w-12 drop-shadow-lg ml-4 sm:mx-4'/>
+                <h1 className="font-Montserrat text-center leading-none text-white font-bold text-[22px] md:text-[30px] xl:text-[30px] xxl:text-[30px] py-4 drop-shadow-lg">
                     Audio y Tambor - Drum tracking studios
                 </h1>
             </div> 
