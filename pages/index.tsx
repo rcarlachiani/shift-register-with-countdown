@@ -70,8 +70,6 @@ const Home: NextPage = () => {
 
             const content = await rawResponse.json();
 
-            console.log(content.data.tableRange)
-
             setArtistName('')
             setPhone('')
             setName('')
