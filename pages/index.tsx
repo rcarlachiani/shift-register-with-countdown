@@ -177,7 +177,7 @@ const Home: NextPage = () => {
 
                         <div className="flex flex-col items-center">
                             <button type="button" onClick={clearData} className="reset-button text-white bg-lightgreen font-Montserrat font-bold my-3 px-10 border border-lightgreen rounded-full flex items-center">
-                                 RESETEAR CAMPOS
+                                 REINICIAR CAMPOS
                             </button>
                             <button type="submit" className="text-white bg-lightgreen font-Montserrat font-bold my-3 py-3 px-10 border border-lightgreen rounded-full flex items-center">
                                 REGISTRAR TURNO
