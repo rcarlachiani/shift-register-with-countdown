@@ -1,9 +1,9 @@
-:gb: EN
-Recycling and redevelopment of a third-party code which was given the functionality to book shifts for a recording studio with a countdown, integration of Google Sheets to keep track of shifts, and a personalized notice with a countdown to the client's email.
+:gb: EN<br>
+Recycling and redevelopment of a third-party code which was given the functionality to book shifts for a recording studio with a countdown, integration of Google Sheets to keep track of shifts, and a personalized notice with a countdown to the client's email.<br>
 :computer: Developed with Next.js
 
-:es: ES
-Reciclado y re-desarrollo de un código de terceros al cual se le dió la funcionalidad de ser un registro turnos para un estudio de grabación con cuenta regresiva, integración de Google Sheets para llevar un resgistro de turnos y aviso personalizado con cuenta regresiva al mail del cliente.
+:es: ES<br>
+Reciclado y re-desarrollo de un código de terceros al cual se le dió la funcionalidad de ser un registro turnos para un estudio de grabación con cuenta regresiva, integración de Google Sheets para llevar un resgistro de turnos y aviso personalizado con cuenta regresiva al mail del cliente.<br>
 :computer: Desarrollado con Next.js
 
 ![thumbnail.png](screenshots/nextjs-sheets.jpg)
