@@ -3,7 +3,7 @@
 Recycling and redevelopment of a third-party code which was given the functionality to book shifts for a recording studio with a countdown, integration of Google Sheets to keep track of shifts, and a personalized notice with a countdown to the client's email.
 <br>
 <br>
-:computer: Developed with Next.js
+:computer: Developed with Next.js and Tailwind
 <br>
 <br>
 :grey_question: How to start:
@@ -20,7 +20,7 @@ Recycling and redevelopment of a third-party code which was given the functional
 Reciclado y re-desarrollo de un código de terceros al cual se le dió la funcionalidad de ser un registro turnos para un estudio de grabación con cuenta regresiva, integración de Google Sheets para llevar un resgistro de turnos y aviso personalizado con cuenta regresiva al mail del cliente.
 <br>
 <br>
-:computer: Desarrollado con Next.js
+:computer: Desarrollado con Next.js y Tailwind
 <br>
 <br>
 :grey_question: Cómo iniciar:
