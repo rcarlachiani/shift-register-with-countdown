@@ -2,16 +2,34 @@
 <br>
 Recycling and redevelopment of a third-party code which was given the functionality to book shifts for a recording studio with a countdown, integration of Google Sheets to keep track of shifts, and a personalized notice with a countdown to the client's email.
 <br>
+<br>
 :computer: Developed with Next.js
 <br>
 <br>
+:grey_question: How to start:
 
+1. Clone repository
+
+2. npm install
+
+3. npm run dev
+
+<br>
 :es: ES
 <br>
 Reciclado y re-desarrollo de un código de terceros al cual se le dió la funcionalidad de ser un registro turnos para un estudio de grabación con cuenta regresiva, integración de Google Sheets para llevar un resgistro de turnos y aviso personalizado con cuenta regresiva al mail del cliente.
 <br>
+<br>
 :computer: Desarrollado con Next.js
 <br>
+<br>
+:grey_question: Cómo iniciar:
+
+1. Clonar repositorio
+
+2. npm install
+
+3. npm run dev
 <br>
 
 ![thumbnail.png](screenshots/nextjs-sheets.jpg)
